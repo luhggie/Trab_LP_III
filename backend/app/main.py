@@ -4,8 +4,8 @@ from pydantic import BaseModel
 app = FastAPI(title="Backend - Projeto Lab Prog III")
 
 # Checagem de status
-@app.get("/healthcheck")
-def healthcheck():
+@app.get("/status")
+def status():
     return {"status": "ok"}
 
 # Autenticação
