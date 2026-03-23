@@ -3,8 +3,6 @@ function Sidebar({
   paginaAtual,
   usuarioLogado,
   onFechar,
-  onIrLogin,
-  onIrCadastro,
   onIrPerfil,
   onIrHealthcheck,
   onSair,
@@ -30,22 +28,6 @@ function Sidebar({
             ×
           </button>
         </div>
-
-        <button
-          type="button"
-          className={paginaAtual === 'login' ? 'sidebar-btn ativo' : 'sidebar-btn'}
-          onClick={() => handleAcao(onIrLogin)}
-        >
-          Login
-        </button>
-
-        <button
-          type="button"
-          className={paginaAtual === 'cadastro' ? 'sidebar-btn ativo' : 'sidebar-btn'}
-          onClick={() => handleAcao(onIrCadastro)}
-        >
-          Cadastro
-        </button>
 
         <button
           type="button"
